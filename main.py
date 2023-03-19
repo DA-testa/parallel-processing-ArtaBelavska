@@ -9,10 +9,10 @@ def parallel_processing(n, m, data):
     # TODO: write the function for simulating parallel tasks, 
     # create the output pairs
     while apstradesLaiks:
-        skaits= pavediens.skaits(min(pavediens))
-        output.append((skaits, pavediens[skaits]))
+        index = pavediens.index(min(pavediens))
+        output.append((index, pavediens[index]))
         ilgums, apstrade= apstradesLaiks.pop(0)
-        pavediens[skaits]+= ilgums
+        pavediens[index]+= ilgums
     #output.append((pavediens[0], pavediens[1]))
     return output
 
