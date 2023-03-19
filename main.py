@@ -14,7 +14,7 @@ while apstradesLaiks:
     ilgums, apstrade= apstradesLaiks.pop(0)
     pavediens[skaits]+= ilgums
     #output.append((pavediens[0], pavediens[1]))
-    return output
+return output
 
 def main():
     # TODO: create input from keyboard
