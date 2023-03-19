@@ -28,8 +28,8 @@ def main():
     # TODO: create the function
     data=list(map(int, input().split()))
     result = parallel_processing(n, m, data)
-    for pavediens, time in result:
-        print(pavediens, time)
+    for time, pavediens in result:
+        print(time, pavediens)
     # TODO: print out the results, each pair in it's own line
 
 if __name__ == "__main__":
