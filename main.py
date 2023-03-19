@@ -3,7 +3,7 @@ import time
 
 def parallel_processing(n, m, data):
     output = []
-    apstradesLaiks=[(l, i) for i, l in s(data)]
+    apstradesLaiks=[(l, i) for i, l in enumerate(data)]
     pavediens= [0]*n
     #pavediens=[(i, 0) for i in range(n)]
     # TODO: write the function for simulating parallel tasks, 
@@ -27,7 +27,7 @@ def main():
     n, m=map(int, input().split())
     # TODO: create the function
     data=list(map(int, input().split()))
-    result = parallel_processing(n,m,data)
+    result = parallel_processing(n, m, data)
     for pavediens, time in result:
         print(pavediens, time)
     # TODO: print out the results, each pair in it's own line
